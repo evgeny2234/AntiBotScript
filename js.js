@@ -19,3 +19,9 @@ $( document ).ready(function() {
 	}
 	getUrlVars();
 });
+
+//var prev = document.referrer;
+
+/*if (prev.indexOf('instagram') + 1) {
+	window.location.href = "http://tracker.xkuklohd.beget.tech/track/los-pollos-bez-uvoda/source/campaign-ads"
+}*/
